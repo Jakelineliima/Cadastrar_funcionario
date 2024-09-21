@@ -16,16 +16,16 @@
     <fieldset>
       <legend>Cadastro de funcionario</legend>
       <label for="nome">Nome:</label>
-      <input type="text" placeholder="  Digite o seu nome:" id="nome" name="nome">
+      <input type="text" placeholder="Digite o seu nome:" id="nome" name="nome">
       <br>
       <label for="idade">Idade:</label>
-      <input type="number" placeholder="  Digite sua idade" id="idade" name="idade">
+      <input type="number" placeholder="Digite sua idade" id="idade" name="idade">
       <br>
 
       <label for="cargo">Qual o seu Cargo:</label>
       <select name="cargo" id="cargo">
-        <option value="Gerente"> Gerente</option>
-        <option value="Programador"> Programador</option>
+        <option value="Gerente">Gerente</option>
+        <option value="Programador">Programador</option>
         <option value="Designer"> Design</option>
       </select>
       <br>
@@ -56,7 +56,7 @@
         <option value="de Ciências">Ciências</option>
         <option value=" de Tecnologia da Informação (TI)">Departamento de TI</option>
         <option value="de Recursos Humanos">Departamento de Recurso Humanos</option>
-        
+
       </select>
       <button type="button" onclick="criarFuncionario()">Cadastrar</button>
     </fieldset>
@@ -64,7 +64,7 @@
 
   </form>
 
-  <br>  <br>
+  <br> <br>
   <hr>
   <br>
 
@@ -75,7 +75,7 @@
   </div>
 
   <div id="erro">
-    
+
   </div>
 
 </body>
@@ -135,6 +135,12 @@
     font-size: 20px;
     margin: 20px auto;
   }
+
+  input[type="text"],input[type="number"] {
+    padding-left: 10px;
+  }
+  
+ 
 </style>
 
 </html>
