@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="class.js"></script>
+  <title>Cadastro de funcionario</title>
+</head>
+
+<body>
+
+
+  <form id="cadastrarFuncionario">
+
+    <fieldset>
+      <legend>Cadastro de funcionario</legend>
+      <label for="nome">Nome:</label>
+      <input type="text" placeholder="  Digite o seu nome:" id="nome" name="nome">
+      <br>
+      <label for="idade">Idade:</label>
+      <input type="number" placeholder="  Digite sua idade" id="idade" name="idade">
+      <br>
+
+      <label for="cargo">Qual o seu Cargo:</label>
+      <select name="cargo" id="cargo">
+        <option value="Gerente"> Gerente</option>
+        <option value="Programador"> Programador</option>
+        <option value="Designer"> Design</option>
+      </select>
+      <br>
+
+
+      <label for="turno">Qual seu turno?</label>
+      <select name="turno" id="turno">
+        <option value="da manhã">Periodo da manhã</option>
+        <option value="da tarde">Periodo da tarde</option>
+        <option value="da noite">Periodo da noite</option>
+        <option value="integral">Periodo integral</option>
+      </select>
+
+      <br>
+
+      <label for="linguagem">Qual linguagem de programação? Se for programador</label>
+      <select name="linguagem" id="linguagem">
+        <option value="no_prog">Não sou programador</option>
+        <option value="Javascript">Javascript</option>
+        <option value="PHP">Php</option>
+        <option value="Python">Python</option>
+        <option value="Java">Java</option>
+      </select>
+
+      <label for="departamento">departamento</label>
+      <select name="departamento" id="departamento">
+        <option value="nenhumdepartamento">Não sou gerente</option>
+        <option value="de Ciências">Ciências</option>
+        <option value=" de Tecnologia da Informação (TI)">Departamento de TI</option>
+        <option value="de Recursos Humanos">Departamento de Recurso Humanos</option>
+        
+      </select>
+      <button type="button" onclick="criarFuncionario()">Cadastrar</button>
+    </fieldset>
+
+
+  </form>
+
+  <br>  <br>
+  <hr>
+  <br>
+
+  <div id="resultado">
+    <p>Seus dados são o seguinte</p>
+
+    </p>
+  </div>
+
+  <div id="erro">
+    
+  </div>
+
+</body>
+
+<style>
+  label {
+    font-weight: bolder;
+  }
+
+  legend {
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  input,
+  select {
+    width: 450px;
+    height: 35px;
+    margin: 20px auto;
+    border: 1px solid #000;
+    border-radius: 25px;
+  }
+
+  fieldset {
+    width: 500px;
+
+  }
+
+  form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  button {
+    background-color: #663399;
+    color: #fff;
+    font-weight: bold;
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 25px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  button:hover {
+    background-color: #663399ce;
+    cursor: pointer;
+  }
+
+  p {
+    text-align: center;
+    font-size: 20px;
+    margin: 20px auto;
+  }
+</style>
+
+</html>
